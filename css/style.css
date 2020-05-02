@@ -810,7 +810,7 @@ background: linear-gradient(to right, #fc67fa, #f4c4f3); /* W3C, IE 10+/ Edge, F
 .skills-bar .bar_group__bar:nth-of-type(1) {
    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
 }
-{   z-index: 9990 !important;
+{z-index: 9990 !important;
 }
 .skills-bar .bar_group__bar:nth-of-type(2) {
  background: #f4c4f3;  /* fallback for old browsers */

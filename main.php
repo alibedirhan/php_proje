@@ -1,20 +1,19 @@
 <?php
 ?>
 
-<!-- main-content -->
 <div class="main-content">
     <!-- gallery -->
     <div class="gallery" id="projects">
         <div class="w3-gallery-head">
-            <h3>Projelerim</h3>
+            <h3>My projects</h3>
         </div>
         <div class="container">
             <div class="gallery_gds">
                 <ul class="simplefilter ">
-                    <li class="active" data-filter="all">Tümü</li>
-                    <li data-filter="1">Python</li>
-                    <li data-filter="2">HTML/CSS</li>
-                    <li data-filter="3">Elektronik</li>
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="1">php</li>
+                    <li data-filter="2">Java</li>
+                    <li data-filter="3">Web development</li>
                 </ul>
                 <div class="filtr-container " style="padding: 0px; position: relative; height: 858px;">
                     <div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 5" data-sort="Busy streets" style="opacity: 1; transform: scale(1) translate3d(0px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
@@ -112,4 +111,3 @@
     </div>
     <!--//gallery-->
 </div>
-<!-- //main-content -->

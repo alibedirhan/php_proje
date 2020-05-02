@@ -1,20 +1,19 @@
-<?php
-?>
+<?php include 'db_set.php';
 
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
+$ayarlar = $DB_connect ->prepare('SELECT * FROM ayarlar');
+$ayarlar ->execute();
+$ayarcek = $ayarlar ->fetch(PDO::FETCH_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="tr">
 <!-- Head -->
 <head>
-    <title><?php echo ArrayHelper::getData($settings, 'title')?>'un Kişisel Sayfası</title>
+    <title><?php echo $ayarcek['site_title'];?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <meta name="keywords" content="Ali Bedirhan Dursun'un Kişisel Sayfası. Fizik Mühendisi, Junior Yazılımcı," />
+    <meta name="description" content="<?php echo $ayarcek['site_desc'];?>" />
+    <meta name="keywords" content="<?php echo $ayarcek['site_keyw'];?>" />
     <!-- css -->
     <!-- font-awesome icons -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />

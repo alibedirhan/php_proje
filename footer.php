@@ -1,8 +1,6 @@
 <?php
 ?>
 
-<!-- footer -->
-<!--
 <div class="w3l_footer">
     <div class="container">
 
@@ -47,57 +45,3 @@
         <p>© 2017 C-Resume. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
     </div>
 </div>
-<!-- //footer -->
-<script src="js/bars.js"></script>
-<!-- start-smoth-scrolling -->
-<script src="js/SmoothScroll.min.js"></script>
-<!-- text-effect -->
-<script type="text/javascript" src="js/jquery.transit.js"></script>
-<script type="text/javascript" src="js/jquery.textFx.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.test').textFx({
-            type: 'fadeIn',
-            iChar: 100,
-            iAnim: 1000
-        });
-    });
-</script>
-<!-- //text-effect -->
-<!-- menu-js -->
-<script src="js/modernizr.js"></script>
-<script src="js/menu.js"></script>
-<!-- //menu-js -->
-
-
-<script type="text/javascript" src="js/move-top.js"></script>
-
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-        });
-    });
-</script>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        /*
-            var defaults = {
-            containerID: 'toTop', // fading element id
-            containerHoverID: 'toTopHover', // fading element hover id
-            scrollSpeed: 1200,
-            easingType: 'linear'
-            };
-        */
-
-        $().UItoTop({ easingType: 'easeOutQuart' });
-
-    });
-</script>
-
-
-</body>
-</html>
