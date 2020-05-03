@@ -10,12 +10,12 @@ $bannercek = $banner ->fetch(PDO::FETCH_ASSOC);
             <nav class="cd-stretchy-nav edit-content">
                 <a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
                 <ul>
-                    <li><a href="#home" class="scroll"><span>Home</span></a></li>
-                    <li><a href="#about" class="scroll"><span>About</span></a></li>
-                    <li><a href="#experiences" class="scroll"><span>Experiences</span></a></li>
-                    <li><a href="#skills" class="scroll"><span>Skills</span></a></li>
-                    <li><a href="#projects" class="scroll"><span>Projects</span></a></li>
-                    <li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+                    <li><a href="#home" class="scroll"><span>Anasayfa</span></a></li>
+                    <li><a href="#about" class="scroll"><span>Hakkımda</span></a></li>
+                    <li><a href="#experiences" class="scroll"><span>Deneyimler</span></a></li>
+                    <li><a href="#skills" class="scroll"><span>Yetenekler</span></a></li>
+                    <li><a href="#projects" class="scroll"><span>Projeler</span></a></li>
+                    <li><a href="#contact" class="scroll"><span>İletişim</span></a></li>
                 </ul>
                 <span aria-hidden="true" class="stretchy-nav-bg"></span>
             </nav>

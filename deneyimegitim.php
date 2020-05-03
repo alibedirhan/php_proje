@@ -23,7 +23,7 @@
                             </div>
                             <div class="col-md-6 w3-edu-info2">
                                 <h3><?php echo $row['deneyim_sirket'];?></h3>
-                                <h4><i class="fa fa-users" aria-hidden="true"></i><span><?php echo $row['deneyim_gorev'];?>></span></h4>
+                                <h4><i class="fa fa-users" aria-hidden="true"></i><span><?php echo $row['deneyim_gorev'];?></span></h4>
                                 <p><?php echo $row['deneyim_yorum']; ?> </p>
                             </div>
 

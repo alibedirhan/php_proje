@@ -1,7 +1,7 @@
 <?php
 ?>
 
-<div class="w3l_footer">
+<div class="w3l_footer"><!--
     <div class="container">
 
         <div class="w3ls_footer_grids">
@@ -40,7 +40,7 @@
                 <div class="clearfix"> </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="w3l_footer_pos">
         <p>© 2017 C-Resume. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
     </div>

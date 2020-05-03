@@ -4,12 +4,12 @@
             <h4>Yetenekler</h4>
         </div>
         <?php
-            $yeteneklersol = $DB_connect->prepare("SELECT * FROM yetenekler ORDER BY beceri_id DESC");
-            $yeteneklersol ->execute();
-            $yetenekceksol = $yeteneklersol->fetchAll(PDO::FETCH_ASSOC);
+            $yetenekler = $DB_connect->prepare("SELECT * FROM yetenekler ORDER BY beceri_id DESC");
+            $yetenekler ->execute();
+            $yetenekcek = $yetenekler->fetchAll(PDO::FETCH_ASSOC);
         ?>
                     <div class="skills-bar">
-                        <?php foreach ($yetenekceksol as $row): ?>
+                        <?php foreach ($yetenekcek as $row): ?>
                     <div class="col-md-6 w3-agile-skills-grid">
                             <section class='bar'>
                                 <section class='wrap'>
