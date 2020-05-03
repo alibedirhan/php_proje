@@ -4,7 +4,7 @@
 <div class="contact" id="contact">
     <div class="container">
         <div class="w3ls-heading">
-            <h3>Contact me</h3>
+            <h3>İletişim</h3>
         </div>
         <div class="contact-w3ls">
             <form action="#" method="post">

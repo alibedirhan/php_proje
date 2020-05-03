@@ -5,23 +5,34 @@
     <!-- gallery -->
     <div class="gallery" id="projects">
         <div class="w3-gallery-head">
-            <h3>My projects</h3>
+            <h3>Projelerim</h3>
         </div>
+
         <div class="container">
             <div class="gallery_gds">
-                <ul class="simplefilter ">
-                    <li class="active" data-filter="all">All</li>
-                    <li data-filter="1">php</li>
-                    <li data-filter="2">Java</li>
-                    <li data-filter="3">Web development</li>
-                </ul>
+                    <ul class="simplefilter ">
+                        <?php
+                            $projeler = $DB_connect ->prepare("SELECT * FROM galeri ORDER BY proje_id DESC");
+                            $projeler ->execute();
+                            $projecek = $projeler ->fetchAll(PDO::FETCH_ASSOC);
+                        ?>
+
+                    <?php foreach ($projecek as $row): ?>
+
+                        <li class="active" data-filter="all">Tümü</li>
+                        <li data-filter="1"><?php echo $projecek['proje_adi'];?></li>
+                        <li data-filter="2"><?php echo $projecek['proje_adi'];?></li>
+                        <li data-filter="3"><?php echo $projecek['proje_adi'];?></li>
+                    </ul>
+                    <?php endforeach; ?>
+
                 <div class="filtr-container " style="padding: 0px; position: relative; height: 858px;">
                     <div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="1, 5" data-sort="Busy streets" style="opacity: 1; transform: scale(1) translate3d(0px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
                         <div class="jm-item-wrapper">
                             <div class="jm-item-image">
-                                <img src="images/g1.jpg" alt="property" />
+                                <img src="<?php echo $projecek['proje_fotograf']; ?>" alt="property" />
                                 <span class="jm-item-overlay"> </span>
-                                <div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal1">View Details</a></div>
+                                <div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal1"><?php echo $projecek['proje_detay']; ?></a></div>
                             </div>
 
                         </div>
@@ -29,9 +40,9 @@
                     <div class="col-md-4 col-ms-6 jm-item first filtr-item" data-category="2, 5" data-sort="Luminous night" style="opacity: 1; transform: scale(1) translate3d(380px, 0px, 0px); backface-visibility: hidden; perspective: 1000px; transform-style: preserve-3d; position: absolute; transition: all 0.5s ease-out 0ms;">
                         <div class="jm-item-wrapper">
                             <div class="jm-item-image">
-                                <img src="images/g2.jpg" alt="property" />
+                                <img src="<?php echo $projecek['proje_fotograf']; ?>" alt="property" />
                                 <span class="jm-item-overlay"> </span>
-                                <div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal2">View Details</a></div>
+                                <div class="jm-item-button"><a href="#"  data-toggle="modal" data-target="#myModal2"><<?php echo $projecek['proje_detay'];?>></a></div>
                             </div>
 
                         </div>

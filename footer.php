@@ -1,47 +1,27 @@
 <?php
 ?>
 
-<div class="w3l_footer"><!--
-    <div class="container">
-
-        <div class="w3ls_footer_grids">
-
-            <div class="w3ls_footer_grid">
-                <div class="col-md-4 w3ls_footer_grid_left">
-                    <div class="w3ls_footer_grid_leftl">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <div class="w3ls_footer_grid_leftr">
-                        <h4>Location</h4>
-                        <p>3030 New York, NY, USA</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-md-4 w3ls_footer_grid_left">
-                    <div class="w3ls_footer_grid_leftl">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="w3ls_footer_grid_leftr">
-                        <h4>Email</h4>
-                        <a href="mailto:info@example.com">info@example.com</a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="col-md-4 w3ls_footer_grid_left">
-                    <div class="w3ls_footer_grid_leftl">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <div class="w3ls_footer_grid_leftr">
-                        <h4>Call Me</h4>
-                        <p>(+000) 003 003 0052</p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>-->
+<div class="w3l_footer">
     <div class="w3l_footer_pos">
-        <p>© 2017 C-Resume. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
+        <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <a href="<?php echo $smcek['sm_facebook'] ?>" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_instgram'] ?>" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_snapchat'] ?>" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_pinterest'] ?>" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_twitter'] ?>" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_linkedin'] ?>" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a href="<?php echo $smcek['sm_youtube'] ?>" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+
+        </footer>
+
+        <?php
+
+        $footer = $DB_connect ->prepare("SELECT * FROM footer");
+        $footer ->execute();
+        $footercek = $footer ->fetch(PDO:: FETCH_ASSOC);
+
+
+        ?>
+        <p><?php echo $footercek['foot_baslik'];?> <a href="<?php echo $footercek['foot_link'];?>"><?php echo $footercek['foot_linkisim'];?></a></p>
     </div>
 </div>
