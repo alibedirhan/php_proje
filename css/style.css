@@ -1090,7 +1090,7 @@ h4.modal-title {
 
 /*-- contact-form --*/ 
  .contact{
-	   background: url(../images/ban6666.jpg) no-repeat 0px 0px;
+	   background: url(../images/c2.jpg) no-repeat 0px 0px;
     background-size: cover;
 	min-height:500px;
 
@@ -1158,9 +1158,7 @@ h4.modal-title {
 }
 :-ms-input-placeholder {  
 	color:#999 !important;
-} 
-/*-- //contact form--*/ 
-/*-- footer --*/
+}
 .w3-container:after,
 .w3-container:before,
 .w3-panel:after,.w3-panel:before,
@@ -1186,6 +1184,9 @@ h4.modal-title {
 .w3-margin{margin:100px!important}
 .w3-margin-top{margin-top:100px!important}
 .w3-margin-bottom{margin-bottom:100px!important}
+/*-- //contact form--*/ 
+/*-- footer --*/
+
 
 .w3l_footer{
 	     background: #000;
