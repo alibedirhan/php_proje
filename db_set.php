@@ -13,4 +13,3 @@ try {
     echo "Database Bağlantısı Kurulamadı"; $Exception -> getMessage();
 }
 
-?>
